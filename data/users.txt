@@ -1,0 +1,5 @@
+Max Mustermann;max@example.com;+436641234567;Fortgeschritten;2025-11-16
+Lisa Beispiel;lisa@example.com;+43664932432;Anfänger;2025-11-16
+Nicht Kilian;nichtkilian@example.com;+436649832423;Profi;2025-11-16
+Cristiano Ronaldo;criiis7@example.com;+436443920432;Profi;2025-11-17;cr7
+Messi;messi@ankara.at;;Profi;2025-11-17;1234
