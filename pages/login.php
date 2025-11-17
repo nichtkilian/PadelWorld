@@ -27,17 +27,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $loggedIn = false;
 
-        // 1) Zuerst: statische User (z.B. admin) prüfen
-        if (isset($staticUsers[$loginInput]) && $staticUsers[$loginInput]["password"] === $password) {
+      // 1) Zuerst: statische User (z.B. admin) prüfen
+if (isset($staticUsers[$loginInput]) && $staticUsers[$loginInput]["password"] === $password) {
 
-            $_SESSION["user"] = [
-                "username" => $loginInput,
-                "role"     => $staticUsers[$loginInput]["role"],
-                "name"     => $staticUsers[$loginInput]["name"]
-            ];
-            $loggedIn = true;
+    $_SESSION["user"] = [
+        "username" => $loginInput,
+        "role"     => $staticUsers[$loginInput]["role"],
+        "name"     => $staticUsers[$loginInput]["name"]
+    ];
+    $loggedIn = true;
 
-        } else {
+} else {
+
             // 2) Sonst: registrierte User aus users.txt prüfen (Login per E-Mail)
             if (file_exists($filePath)) {
                 $handle = fopen($filePath, "r");
@@ -61,18 +62,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         // Vergleich E-Mail (case-insensitive) + Passwort
                         if (strcasecmp($email, $loginInput) === 0 && $filePassword === $password) {
 
-                            $_SESSION["user"] = [
-                                "username"     => $email,
-                                "role"         => "user",
-                                "name"         => $name,
-                                "email"        => $email,
-                                "phone"        => $phone,
-                                "level"        => $level,
-                                "member_since" => $memberSince
-                            ];
-                            $loggedIn = true;
-                            break;
-                        }
+                         $_SESSION["user"] = [
+                         "username"     => $email,
+                          "role"         => "user",
+                         "name"         => $name,
+                         "email"        => $email,
+                            "phone"        => $phone,
+                         "level"        => $level,
+                        "member_since" => $memberSince
+    ];
+
+    // WICHTIG: auch hier user_id setzen (z.B. E-Mail als ID)
+    $_SESSION["user_id"] = $email;
+
+    $loggedIn = true;
+    break;
+}
+
                     }
                     fclose($handle);
                 }

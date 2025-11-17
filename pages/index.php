@@ -40,8 +40,10 @@
 <h2 class="h4 mb-3">Warum PadelWorld?</h2>
 
 <div class="row g-3 mb-4">
+    <!-- Karte 1: Plätze -->
     <div class="col-md-4">
         <div class="card h-100">
+            <img src="../img/court.webp" class="card-img-top" alt="Padel Court">
             <div class="card-body">
                 <h5 class="card-title">Moderne Plätze</h5>
                 <p class="card-text">
@@ -51,8 +53,10 @@
         </div>
     </div>
 
+    <!-- Karte 2: Online-Verwaltung -->
     <div class="col-md-4">
         <div class="card h-100">
+            <img src="../img/online.jpg" class="card-img-top" alt="Online Verwaltung">
             <div class="card-body">
                 <h5 class="card-title">Einfache Online-Verwaltung</h5>
                 <p class="card-text">
@@ -62,10 +66,12 @@
         </div>
     </div>
 
+    <!-- Karte 3: Community -->
     <div class="col-md-4">
         <div class="card h-100">
+            <img src="../img/community.jpg" class="card-img-top" alt="Padel Community">
             <div class="card-body">
-                <h5 class="card-title">Community & Spaß</h5>
+                <h5 class="card-title">Community &amp; Spaß</h5>
                 <p class="card-text">
                     Lerne neue Spieler:innen kennen, finde Partner für Spiele und wachse gemeinsam.
                 </p>
@@ -73,6 +79,7 @@
         </div>
     </div>
 </div>
+
 
 <?php include '../includes/footer.php'; ?>
 
