@@ -9,20 +9,19 @@
         <span>&copy; <?php echo date('Y'); ?> PadelWorld</span>
 
         <span class="text-muted d-flex align-items-center gap-3">
-            <span></span>
-
-            <a href="/PadelWorld-frontendk/pages/help.php"
+            <a href="/PadelWorld-frontend/pages/help.php"
                class="link-secondary link-underline-opacity-75-hover">
                 Hilfe / FAQ
             </a>
 
-            <a href="/PadelWorld-frontendk/pages/impressum.php"
+            <a href="/PadelWorld-frontend/pages/impressum.php"
                class="link-secondary link-underline-opacity-75-hover">
                 Impressum
             </a>
         </span>
     </div>
 </footer>
+
 
 
 <!-- Bootstrap JS -->
