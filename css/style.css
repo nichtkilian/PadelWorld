@@ -1,0 +1,66 @@
+/* Grundlayout */
+body {
+    background: radial-gradient(circle at top, #141414 0, #050505 45%, #000 100%);
+    color: #f8f9fa;
+}
+
+/* Navbar-Logo */
+.navbar-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/* Hero-Bereich */
+.hero-dark {
+    background: radial-gradient(circle at top left, #0d6efd33 0, transparent 60%),
+                radial-gradient(circle at bottom right, #6610f233 0, transparent 60%);
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #2b2b2b;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.7);
+}
+
+.hero-dark h1 {
+    font-weight: 700;
+}
+
+.hero-dark .lead {
+    color: #d0d0d0;
+}
+
+/* Karten auf dunklem Hintergrund */
+.card {
+    background: #111;
+    border-radius: 1rem;
+    border: 1px solid #2b2b2b;
+    color: #f8f9fa;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-text {
+    color: #c2c2c2;
+}
+
+/* Buttons leicht anpassen */
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    border: none;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1);
+}
+
+.btn-outline-light {
+    border-radius: 999px;
+}
+
+/* Kleine Helfer */
+.text-muted {
+    color: #a0a0a0 !important;
+}
